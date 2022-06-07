@@ -32,7 +32,6 @@ public class Base {
 
     @AfterMethod
     public void teardown(){
-        //TODO if there is a failure, take screenshot and attach it to the report
         softAssert.assertAll();
         Driver.quitDriver();
     }
